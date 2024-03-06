@@ -1,0 +1,27 @@
+{
+  "-NsGRXIUeL1q-72I9uOv": {
+    "firebaseKey": 1,
+    "title": "Element",
+    "definition": "An HTML element is a component of an HTML document that tells a web browser how to structure and interpret a part of the HTML document",
+    "tech_id": "HTML",
+    "timeSubmitted": "2023-11-11 11:09:24",
+    "uid": "K2jkaViSFrNSzWne6JWMXxILYGI3"
+  },
+  "-NsGRkXnGYrGLTPvNhiR": {
+    "firebaseKey": 2,
+    "title": "Object",
+    "definition": "An object is a collection of properties, and a property is an association between a name (or key) and a value. A property's value can be a function, in which case the property is known as a method.",
+    "tech_id": "JavaScript",
+    "timeSubmitted": "12:30pm",
+    "uid": "K2jkaViSFrNSzWne6JWMXxILYGI3"
+  
+  },
+  "-NsGTRRjAeg4Umxh66ju": {
+    "firebaseKey": 3,
+    "title": "Properties",
+    "definition": "Properties are defined within selectors by defining a property and a value. They are separated with a colon and delineated with a semi-colon.",
+    "tech_id": "CSS",
+    "timeSubmitted": "1:15am",
+    "uid": "K2jkaViSFrNSzWne6JWMXxILYGI3"
+  }
+}
