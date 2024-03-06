@@ -9,7 +9,7 @@ const formEvents = (uid) => {
       const payload = {
         title: document.querySelector('#title').value,
         description: document.querySelector('#description').value,
-        language_id: document.querySelector('#tech_id').value,
+        tech_id: document.querySelector('#tech_id').value,
         uid,
       };
 
@@ -19,6 +19,20 @@ const formEvents = (uid) => {
         updateVocab(patchPayload).then(() => {
           getVocab(uid).then(showVocab);
         });
+      });
+    }
+
+    if (e.target.id.includes('edit-vocab')) {
+      const [, firebaseKey] = e.target.id.split('--');
+      const payload = {
+        title: document.querySelector('#title').value,
+        description: document.querySelector('#description').value,
+        tech_id: document.querySelector('#tech_id').value,
+        firebaseKey,
+      };
+
+      updateVocab(payload).then(() => {
+        getVocab(uid).then(showVocab);
       });
     }
   });

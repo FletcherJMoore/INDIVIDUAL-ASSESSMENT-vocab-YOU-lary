@@ -4,7 +4,8 @@ import 'bootstrap'; // import bootstrap elements and js
 import '../styles/main.scss';
 
 // USE WITH FIREBASE AUTH
-ViewDirectorBasedOnUserAuthStatus();
-// };
+const init = () => {
+  ViewDirectorBasedOnUserAuthStatus();
+};
 
-// init();
+init();

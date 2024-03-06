@@ -17,9 +17,9 @@ const showVocab = (array) => {
             <p class="card-text bold">${item.description}</p>
             <p class="card-text">${item.time_submitted}</p>
           <div id="card-btns">
-            <i class="btn btn-success" id="view-book-btn--${item.firebaseKey}"><span class="fas fa-eye"></span></i>
-            <i id="edit-book-btn--${item.firebaseKey}" class="btn btn-info"><span class="fas fa-edit"></span></i>
-            <i id="delete-book-btn--${item.firebaseKey}" class="btn btn-danger"><span class="fas fa-trash-alt"></span></i>
+            <i class="btn btn-success" id="view-vocab-btn--${item.firebaseKey}"><span class="fas fa-eye"></span></i>
+            <i id="edit-vocab-btn--${item.firebaseKey}" class="btn btn-info"><span class="fas fa-edit"></span></i>
+            <i id="delete-vocab-btn--${item.firebaseKey}" class="btn btn-danger"><span class="fas fa-trash-alt"></span></i>
           </div>
         </div>
       </div>`;
