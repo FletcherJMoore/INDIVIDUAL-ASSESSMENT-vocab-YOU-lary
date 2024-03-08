@@ -21,6 +21,19 @@ const getVocab = (uid) => new Promise((resolve, reject) => {
     .catch(reject);
 });
 
+// GET SINGLE VOCABULARY
+const getSingleVocab = (firebaseKey) => new Promise((resolve, reject) => {
+  fetch(`${endpoint}/vocab/${firebaseKey}.json`, {
+    method: 'GET',
+    headers: {
+      'Content-Type': 'application/json',
+    },
+  })
+    .then((response) => response.json())
+    .then((data) => resolve(data))
+    .catch(reject);
+});
+
 // CREATE VOCABULARY
 const createVocab = (payload) => new Promise((resolve, reject) => {
   fetch(`${endpoint}/vocabulary.json`, {
@@ -65,5 +78,6 @@ export {
   getVocab,
   createVocab,
   updateVocab,
-  deleteVocab
+  deleteVocab,
+  getSingleVocab
 };

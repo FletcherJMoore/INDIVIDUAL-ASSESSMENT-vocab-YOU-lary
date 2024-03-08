@@ -4,7 +4,7 @@ import navBar from '../components/shared/navBar';
 import navigationEvents from '../components/events/navigationsEvents';
 import { getVocab } from '../api/vocabularyData';
 import formEvents from '../components/events/formEvents';
-import showVocab from '../pages/vocab';
+import { showVocab } from '../pages/vocab';
 
 const startApp = (uid) => {
   domBuilder(uid); // BUILD THE DOM

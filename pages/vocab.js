@@ -27,4 +27,4 @@ const showVocab = (array) => {
   renderToDOM('#store', domString);
 };
 
-export default { showVocab, emptyVocab };
+export { showVocab, emptyVocab };
