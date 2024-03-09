@@ -1,27 +1,31 @@
 {
   "-NsGRXIUeL1q-72I9uOv": {
-    "firebaseKey": 1,
+    "firebaseKey": " -NsGRXIUeL1q-72I9uOv",    
     "title": "Element",
     "definition": "An HTML element is a component of an HTML document that tells a web browser how to structure and interpret a part of the HTML document",
-    "tech_id": "-NsGTYHuH60eTzb_sjQz",
+    "tech_id": "-NsGRXIUeL1q-72I9uOv",
     "timeSubmitted": "2023-11-11 11:09:24",
+    "category": "HTML",
     "uid": "K2jkaViSFrNSzWne6JWMXxILYGI3"
   },
   "-NsGRkXnGYrGLTPvNhiR": {
-    "firebaseKey": 2,
+    "firebaseKey": 
+    " -NsGRkXnGYrGLTPvNhiR",    
     "title": "Object",
     "definition": "An object is a collection of properties, and a property is an association between a name (or key) and a value. A property's value can be a function, in which case the property is known as a method.",
-    "tech_id": "-NsGT4ulWYDQPqkm1mGs",
+    "tech_id": "NsGT4ulWYDQPqkm1mGs",
     "timeSubmitted": "2024-12-1 12:30:45",
+    "category": "JavaScript",
     "uid": "K2jkaViSFrNSzWne6JWMXxILYGI3"
   
   },
   "-NsGTRRjAeg4Umxh66ju": {
-    "firebaseKey": 3,
+    "firebaseKey": "-NsGTRRjAeg4Umxh66ju",
     "title": "Properties",
     "definition": "Properties are defined within selectors by defining a property and a value. They are separated with a colon and delineated with a semi-colon.",
     "tech_id": "-NsGTAB54TOEWnu5M_5Y",
     "timeSubmitted": "2024-03-06 1:15:15",
+    "category": "CSS",
     "uid": "K2jkaViSFrNSzWne6JWMXxILYGI3"
   }
 }

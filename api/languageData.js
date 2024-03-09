@@ -21,4 +21,4 @@ const getTech = (uid) => new Promise((resolve, reject) => {
     .catch(reject);
 });
 
-export default { getTech };
+export default getTech;

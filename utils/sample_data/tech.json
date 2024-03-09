@@ -1,0 +1,20 @@
+{ 
+  "-NsGRXIUeL1q-72I9uOv": {
+    "firebaseKey": "-NsGRXIUeL1q-72I9uOv",
+    "category": "HTML",
+    "definition": "Hypertext Markup Language, a standardized system for tagging text files to achieve font, color, graphic, and hyperlink effects on World Wide Web pages.",
+    "uid": "K2jkaViSFrNSzWne6JWMXxILYGI3"
+  },
+  "-NsGTAB54TOEWnu5M_5Y": {
+      "firebaseKey": "-NsGTAB54TOEWnu5M_5Y",
+      "category": "CSS",
+      "definition": "Cascading Style Sheets is a style sheet language used for specifying the presentation and styling of a document written in a markup language such as HTML or XML. CSS is a cornerstone technology of the World Wide Web, alongside HTML and JavaScript",
+      "uid": "K2jkaViSFrNSzWne6JWMXxILYGI3"
+  },
+ "-NsGT4ulWYDQPqkm1mGs": {
+    "firebaseKey": "-NsGT4ulWYDQPqkm1mGs",
+    "category": "JavaScript",
+    "definition": "JavaScript, often abbreviated as JS, is a programming language and core technology of the World Wide Web, alongside HTML and CSS. As of 2024, 98.8% of websites use JavaScript on the client side for webpage behavior, often incorporating third-party libraries.",
+    "uid": "K2jkaViSFrNSzWne6JWMXxILYGI3"
+  }
+}

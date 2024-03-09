@@ -74,10 +74,66 @@ const deleteVocab = (firebaseKey) => new Promise((resolve, reject) => {
     .catch(reject);
 });
 
+const getJava = (uid) => new Promise((resolve, reject) => {
+  fetch(`${endpoint}/vocabulary.json?orderBy="uid"&equalTo="${uid}"`, {
+    method: 'GET',
+    headers: {
+      'Content-Type': 'application/json',
+    },
+  })
+    .then((response) => response.json(uid))
+    .then((data) => {
+      if (data) {
+        resolve(Object.values(data).filter((obj) => obj.tech_id === '-NsGT4ulWYDQPqkm1mGs'));
+      } else {
+        resolve([]);
+      }
+    })
+    .catch(reject);
+});
+
+const getHTML = (uid) => new Promise((resolve, reject) => {
+  fetch(`${endpoint}/vocabulary.json?orderBy="uid"&equalTo="${uid}"`, {
+    method: 'GET',
+    headers: {
+      'Content-Type': 'application/json',
+    },
+  })
+    .then((response) => response.json(uid))
+    .then((data) => {
+      if (data) {
+        resolve(Object.values(data).filter((obj) => obj.tech_id === '-NsGRXIUeL1q-72I9uOv'));
+      } else {
+        resolve([]);
+      }
+    })
+    .catch(reject);
+});
+
+const getCSS = (uid) => new Promise((resolve, reject) => {
+  fetch(`${endpoint}/vocabulary.json?orderBy="uid"&equalTo="${uid}"`, {
+    method: 'GET',
+    headers: {
+      'Content-Type': 'application/json',
+    },
+  })
+    .then((response) => response.json(uid))
+    .then((data) => {
+      if (data) {
+        resolve(Object.values(data).filter((obj) => obj.tech_id === '-NsGTAB54TOEWnu5M_5Y'));
+      } else {
+        resolve([]);
+      }
+    })
+    .catch(reject);
+});
 export {
   getVocab,
   createVocab,
   updateVocab,
   deleteVocab,
-  getSingleVocab
+  getSingleVocab,
+  getJava,
+  getCSS,
+  getHTML
 };

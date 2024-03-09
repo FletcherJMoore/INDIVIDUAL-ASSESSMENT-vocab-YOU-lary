@@ -1,4 +1,4 @@
-import showVocab from '../../pages/vocab';
+import { showVocab } from '../../pages/vocab';
 import { getVocab, updateVocab, createVocab } from '../../api/vocabularyData';
 
 const formEvents = (uid) => {
@@ -8,9 +8,10 @@ const formEvents = (uid) => {
     if (e.target.id.includes('submit-vocab')) {
       const payload = {
         title: document.querySelector('#title').value,
-        description: document.querySelector('#description').value,
-        tech_id: document.querySelector('#tech_id').value,
-        uid,
+        definition: document.querySelector('#definition').value,
+        techId: document.querySelector('#tech_id').value,
+        timeSubmitted: Date.now(),
+        uid
       };
 
       createVocab(payload).then(({ name }) => {
@@ -22,12 +23,13 @@ const formEvents = (uid) => {
       });
     }
 
-    if (e.target.id.includes('edit-vocab')) {
+    if (e.target.id.includes('update-vocab')) {
       const [, firebaseKey] = e.target.id.split('--');
       const payload = {
         title: document.querySelector('#title').value,
-        description: document.querySelector('#description').value,
+        definition: document.querySelector('#definition').value,
         tech_id: document.querySelector('#tech_id').value,
+        timeSubmitted: Date.now(),
         firebaseKey,
       };
 

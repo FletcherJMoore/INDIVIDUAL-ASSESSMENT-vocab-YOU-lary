@@ -2,7 +2,7 @@ import getTech from '../../api/languageData';
 import renderToDOM from '../../utils/renderToDom';
 
 const selectTech = (techId, uid) => {
-  let domString = `<label for="tech">Select a Language</label>
+  let domString = `<label for="tech"></label>
   <select class="form-control" id="language_id" required>
   <option value="">Select a Language</option>`;
 
@@ -12,6 +12,7 @@ const selectTech = (techId, uid) => {
       <option
        value="${tech.firebaseKey}"
        ${techId === tech.firebaseKey ? 'selected' : ''}>
+       ${tech.category}
        </option>`;
     });
 
