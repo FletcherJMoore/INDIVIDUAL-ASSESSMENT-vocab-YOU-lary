@@ -1,9 +1,9 @@
-import getTech from '../../api/languageData';
+import { getTech } from '../../api/languageData';
 import renderToDOM from '../../utils/renderToDom';
 
 const selectTech = (techId, uid) => {
   let domString = `<label for="tech"></label>
-  <select class="form-control" id="language_id" required>
+  <select class="form-control" id="tech_id" required>
   <option value="">Select a Language</option>`;
 
   getTech(uid).then((techArray) => {

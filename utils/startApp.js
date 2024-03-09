@@ -20,7 +20,7 @@ const startApp = (uid) => {
   navigationEvents(uid); // ATTACH THE EVENT LISTENERS TO THE NAVBAR
 
   // Put all vocabulary on the DOM on App load
-  getVocab(uid).then(showVocab);
+  getVocab(uid).then((vocabs) => showVocab(vocabs));
 };
 
 export default startApp;

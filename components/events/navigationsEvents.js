@@ -3,7 +3,7 @@ import { signOut } from '../../utils/auth';
 import { showVocab } from '../../pages/vocab';
 import addVocabForm from '../Forms/addVocabularyForm';
 import { showTech } from '../../pages/language';
-import getTech from '../../api/languageData';
+import { getTech } from '../../api/languageData';
 
 // navigation events
 const navigationEvents = (uid) => {

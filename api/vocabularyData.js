@@ -23,7 +23,7 @@ const getVocab = (uid) => new Promise((resolve, reject) => {
 
 // GET SINGLE VOCABULARY
 const getSingleVocab = (firebaseKey) => new Promise((resolve, reject) => {
-  fetch(`${endpoint}/vocab/${firebaseKey}.json`, {
+  fetch(`${endpoint}/vocabulary/${firebaseKey}.json`, {
     method: 'GET',
     headers: {
       'Content-Type': 'application/json',

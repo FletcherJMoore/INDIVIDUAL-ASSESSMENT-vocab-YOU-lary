@@ -1,4 +1,4 @@
-import { getVocab, getSingleVocab, deleteVocab } from '../../api/vocabularyData';
+import { getVocab, deleteVocab, getSingleVocab } from '../../api/vocabularyData';
 import { showVocab } from '../../pages/vocab';
 import addVocabForm from '../Forms/addVocabularyForm';
 
@@ -22,11 +22,11 @@ const domEvents = (uid) => {
     }
 
     // CLICK EVENT FOR EDITING A VOCAB
-    if (e.target.id.includes('edit-vocab-btn')) {
-      console.warn('EDIT BTN');
+    if (e.target.id.includes('update-vocab')) {
+      console.warn('EDIT BTN', e.target.id);
       const [, firebaseKey] = e.target.id.split('--');
 
-      getSingleVocab(firebaseKey).then((vocabObj) => addVocabForm(vocabObj));
+      getSingleVocab(firebaseKey).then((vocabObject) => addVocabForm(vocabObject));
     }
   });
 };

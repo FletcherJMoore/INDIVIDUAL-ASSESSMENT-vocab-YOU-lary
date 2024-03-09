@@ -21,4 +21,17 @@ const getTech = (uid) => new Promise((resolve, reject) => {
     .catch(reject);
 });
 
-export default getTech;
+// FIXME: GET SINGLE AUTHOR
+const getSingleTech = (firebaseKey) => new Promise((resolve, reject) => {
+  fetch(`${endpoint}/tech/${firebaseKey}.json`, {
+    method: 'GET',
+    headers: {
+      'Content-Type': 'application/json',
+    },
+  })
+    .then((response) => response.json())
+    .then((data) => resolve(data)) //
+    .catch(reject);
+});
+
+export { getTech, getSingleTech };
